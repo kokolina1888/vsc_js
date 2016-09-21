@@ -6,17 +6,17 @@ console.log(part);
 
 //WHY TO CLONE THE ARRAY
 
-// myVar = items;
-// console.log(myVar);
+myVar = items;
+console.log(myVar);
 
-// myVar[5] = 55;
-// myVar[6] = 55;
+myVar[5] = 55;
+myVar[6] = 55;
 
-//console.log(myVar);
+console.log(myVar);
 
-//PAY ATTENTION
-//changes are passed by refference
-//console.log(items);
+// PAY ATTENTION
+// changes are passed by refference
+console.log(items);
 
 clonedArr = items.slice(0);
 console.log(clonedArr);

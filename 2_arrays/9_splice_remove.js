@@ -3,7 +3,7 @@ var items,
 	arr1;
 
 	items 	= [ 2, 3, 6 ];
-	arr = items.splice(1, 1);
+	arr = items.splice(1, 2);
 	console.log(arr);
 	console.log(items);
 	
