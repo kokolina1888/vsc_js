@@ -1,22 +1,25 @@
 var items = [1, 2, 3, 4, 5], 
-	myVar, part,
+	myVar = [], part,
 	clonedArr; 
-part = items.slice(1, 3); 
-console.log(part);
+// 	//returns part of the array from index1 to index2
+// 	//excluding index2
 
-//WHY TO CLONE THE ARRAY
+// // part = items.slice(1, 3); 
+// // console.log(part);
 
-myVar = items;
-console.log(myVar);
+// //WHY TO CLONE THE ARRAY
 
-myVar[5] = 55;
-myVar[6] = 55;
+// myVar = items;
+// console.log(myVar);
 
-console.log(myVar);
+// myVar[5] = 55;
+// myVar[6] = 55;
 
-// PAY ATTENTION
-// changes are passed by refference
-console.log(items);
+// console.log(myVar);
+
+// // // PAY ATTENTION
+// // // changes are passed by refference
+// console.log(items);
 
 clonedArr = items.slice(0);
 console.log(clonedArr);
