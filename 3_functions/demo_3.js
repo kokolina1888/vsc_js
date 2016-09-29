@@ -9,3 +9,6 @@ function sum(numbers){
   }
   return s;
 }
+
+console.log(multiply(1, 10));
+console.log(sum([1, 10]));

@@ -13,3 +13,6 @@ function isPrime(number){
   //The number is prime
   return true;
 }
+
+
+console.log(isPrime(33));
