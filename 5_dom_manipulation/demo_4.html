@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+	</div>
+	<script type="text/javascript">
+		
+		var el = document.createElement('div');//the more 'culture' way of creating elements
+		el.innerHTML = '<p></p>';//the fastest way of creating elements
+		el.id = 'new-element';
+		// console.log(el);
+
+		//document.body.appendChild(el);//always at the end of the selected element
+		//	TO CHOOSE SPECIFIC PLACE TO APPEND
+		//FOR EXAMPLE - PARENT.INSERTBEFORE(SELECTED ELEMENT.FIRSTELEMENTCHILD)
+
+		var div = document.body.getElementsByTagName('div')[0];
+
+
+		div.insertBefore(el, div.firstElementChild);
+
+
+	</script>
+</body>
+</html>

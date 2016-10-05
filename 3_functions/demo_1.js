@@ -8,15 +8,15 @@
 
 //FUNCTION EXPRESSION
 
-// funcExpression();
+//funcExpression();
 
-// var funcExpression = function(){
+var funcExpression = function(){
 
-// 	console.log('I am a function expression');
+	console.log('I am a function expression');
 
-// };
+};
 
-// funcExpression();
+funcExpression();
 
 var funcExpression = function notAnonmous(){
 
@@ -25,4 +25,4 @@ var funcExpression = function notAnonmous(){
 };
 
 funcExpression();
-// notAnonmous();
+notAnonmous();

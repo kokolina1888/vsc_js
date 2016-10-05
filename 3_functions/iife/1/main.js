@@ -1,5 +1,4 @@
 (function () {
-
     /**
      * Calculates the volume of a cylinder.
      * @param {Number} r - The radius of the cylinder.

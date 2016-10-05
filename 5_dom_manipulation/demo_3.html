@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+	</div>
+	<script type="text/javascript">
+
+  var body = document.body;
+  var div = body.getElementsByTagName('div')[0];
+  var anchor = div.getElementsByTagName('a');
+  var len = anchor.length;
+
+  for (var i = 0; i < len ; i+=1) {
+    console.log(anchor[i]);
+    if (!anchor[i].nextElementSibling) {
+      console.log('no more siblings after '+ i);
+    }
+  }
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

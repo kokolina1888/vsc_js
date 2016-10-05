@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dFrag</title>
+</head>
+<body>
+	<div>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+	</div>
+	<script type="text/javascript">
+	var content = '', num = 1, anNum = 2;
+		var dFrag = document.createDocumentFragment();
+		var ul = document.createElement('ul');	
+		var li = document.createElement('li');
+
+		// for(var i = 0; i < 10; i+= 1){
+		// 	content += '<li> I am li number '+ num +'</li>';
+		// 	num+=1;			
+		// }
+		for (var i = 0; i < 9; i+=1) {
+			var list = li.cloneNode(true);
+			list.innerHTML = 'li number ' + anNum;
+			ul.appendChild(list);
+			anNum+=1;
+		}
+
+		//ul.innerHTML = content;
+		dFrag.appendChild(ul);
+		console.log(dFrag);
+
+var div = document.body.getElementsByTagName('div');
+
+		div[0].appendChild(dFrag);
+	</script>
+</body>
+</html>

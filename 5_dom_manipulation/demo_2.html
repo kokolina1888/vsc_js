@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+		<a href="http://telerikacademy.com/Administration_Lecturer/CourseManagement/Index/297">My link</a>
+	</div>
+	<script type="text/javascript">
+
+//selectedDiv.innerHTML = "changed";
+
+	// var body = document.body;
+	// body.getElementsByTagName('div')[0].innerHTML = 'no content';
+
+
+  //change div`s background 
+  
+  var body = document.body;
+  var div = body.getElementsByTagName('div')[0];
+  div.style.background = '#27D558';
+  div.getElementsByTagName('a')[0].style.color = '#F4BB0F';
+
+  // //DEMO 2
+  // //parentNode
+  // console.log(div.parentNode);
+  // //childNodes
+  // console.log(div.childNodes);
+
+  //DEMO 3
+  //FIRST/LAST CHILD
+  // console.log(div.firstChild);//returns the whitespaces as first child!!!!!
+  // //console.log(div.firstElementChild);
+  // console.log(div.firstElementChild.innerHTML);
+  //console.log(div.lastChild);
+  console.log(div.lastElementChild);
+
+
+
+</script>
+
+</body>
+</html>
