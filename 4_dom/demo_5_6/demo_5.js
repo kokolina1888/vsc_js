@@ -1,22 +1,11 @@
-// innerHTML
+// 
+// console.log(document.forms[0].innerHTML);
 
-// var body = document.body;
-// console.log(body.innerHTML);
-//console.log(document.body.innerHTML);
+// console.log(document.getElementsByTagName('h1')[0].innerHTML);
+var inputs = document.querySelectorAll('#email_form input');
 
-// outerHTML
-// var form = document.getElementById('email_form');
+var len = inputs.length;
 
-// console.log(form.outerHTML);
-
-
-
-
-// innerText / textContent
-
-var form = document.getElementById('email_form');
-
-//console.log(form.innerText);
-console.log(form.textContent);
-
-
+for(var i = 0; i<len; i++){
+	console.log(inputs[i].name);
+}

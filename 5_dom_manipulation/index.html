@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CreatingElements</title>
+</head>
+<body>
+<div>
+	'Ти ще бъдеш изтрит';
+</div>
+<script type="text/javascript">
+	var inputText = document.createElement('input');
+	inputText.type = 'text';
+	inputText.name = 'my-name';
+	console.log(inputText);
+
+	var submit = document.createElement('input');
+	submit.type = 'submit';
+	submit.name = 'submit';
+	submit.value = 'logIn';
+	console.log(submit.value);
+
+	var form = document.createElement('form');
+	form.id = 'form-1';
+	
+
+	form.appendChild(inputText);
+	form.appendChild(submit);
+
+	document.body.appendChild(form);
+
+	//console.log(form);
+
+
+
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DocFrag</title>
+</head>
+<body>
+<script type="text/javascript">
+	var  docFrag = document.createDocumentFragment();
+	var ul = document.createElement('ul');
+	ul.innerHTML = '';
+	for(var i = 1; i <= 10; i+=1){
+	ul.innerHTML+= '<li>li number '+ i +'</li>';
+	}
+docFrag.appendChild(ul);
+document.body.appendChild(docFrag);
+	console.log(ul);
+</script>
+	
+</body>
+</html>
