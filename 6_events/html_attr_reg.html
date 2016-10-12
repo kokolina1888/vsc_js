@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>As HTML attr</title>
+</head>
+<body>
+	<img src="index_1.jpg" alt="I am serious" id="pic" onmouseover="changeMoodKidding()" onmouseout="changeMoodSerious()">
+	<h1 id="mood">I am serious</h1>
+	<script type="text/javascript">
+		var h = document.getElementById('mood');
+		var pic = document.getElementById('pic');
+		var alt = pic.alt;
+		
+		
+
+		function changeMoodKidding(){
+			pic.src = 'index.jpg';
+			
+			h.innerHTML = 'Just kidding';
+		}
+		function changeMoodSerious(){
+			pic.src = 'index_1.jpg';
+			
+			h.innerHTML = 'I am serious';
+		}
+
+	</script>
+</body>
+</html>

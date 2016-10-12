@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>El Propps</title>
+</head>
+<body>
+	<img src="index_1.jpg" alt="I am serious" id="pic">
+	<h1 id="mood">I am serious</h1>
+	<button id="changer">Change Mood</button>
+	<script type="text/javascript">
+	var btn = document.getElementById('changer');
+	btn.onclick = function(){
+			var h = document.getElementById('mood');
+			var pic = document.getElementById('pic');
+			var text = h.innerHTML;
+			if (text !== "I am serious") {
+				h.innerHTML = "I am serious";
+				pic.src = 'index_1.jpg';
+			} else {				
+				h.innerHTML = "Just kidding!";
+				pic.src = 'index.jpg';
+			}
+			};
+	</script>
+</body>
+</html>

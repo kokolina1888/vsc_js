@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>capturing events</title>
+</head>
+<body onload="onBodyLoad()">
+	<div>
+		<a href="">
+			<p>
+				<button>
+					Click me!
+				</button>
+			</p>
+		</a>		
+	</div>
+	<script type="text/javascript">
+		function onCaptClick(){
+			console.log('capturing ' + this.nodeName);
+		}
+		function onBodyLoad(){
+			var el = document.body;
+
+			while(el){
+
+				el.addEventListener('click', onCaptClick, true);
+
+				el = el.firstElementChild;
+			}
+		}
+	</script>
+</body>
+</html>
