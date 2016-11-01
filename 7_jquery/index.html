@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <script type="text/javascript" src="jquery-3.1.1.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id='div-parent'>
+		<ul id="list">
+			<li><a href="#">I am a tag</a></li>
+			<li><a href="#">I am a tag</a></li>
+			<li><a href="#">I am a tag</a></li>
+			<li><a href="#">I am a tag</a></li>
+		</ul>
+		<img src="image.html">
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			var li = $('li');
+				li.dblclick(function(){
+					$(this).css('background', 'red');
+					//li.css('background', 'red');
+				});
+			}
+		);
+		</script>
+	</body>
+	</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task1</title>
+</head>
+<body>
+	<!-- съдържаща текстово поле, div и бутон -->
+
+	<input type="text" name="text">
+	<div></div>
+	<button id="btn">Validate</button>
+	<script type="text/javascript">
+		var btn = document.getElementById('btn');
+		btn.addEventListener('click', validateEmail, false);
+
+		function validateEmail() {
+			var input = document.getElementsByName('text')[0].value;
+			var div = document.getElementsByTagName('div')[0];
+
+			div.innerHTML = input;
+			div.style.backgroundColor = '#F80404';		
+
+			if (input.indexOf('@') !== -1) {
+				var arr = input.split('@');
+				if (arr[1].indexOf('.') !== -1) {
+					var myArr =	arr[1].split('.');
+					if (myArr[1].length > 0 && myArr[1].length <= 3) {
+						div.style.backgroundColor = '#03F414';
+					}
+				}											
+			} 
+		} 
+	</script>
+</body>
+</html>

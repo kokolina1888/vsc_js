@@ -5,29 +5,41 @@
 	<title>bubbling events</title>
 </head>
 <body onload="onBodyLoad()">
-	<div>
-		<a href="">
-			<p>
-				<button>
-					Click me!
-				</button>
-			</p>
-		</a>		
-	</div>
+    <div>
+        <section>
+            <div>
+                <div>
+                    <a class="button" href="#">Click me!</a>
+                </div>
+            </div>
+        </section>
+    </div>
 	<script type="text/javascript">
 		function onBubbleClick(){
 			console.log('Bubbling ' + this.nodeName);
 		}
-		function onBodyLoad(){
-			var el = document.body;
 
-			while(el){
+		function getFirstElementChild(element) {
+            if (!element) {
+                return;
+            }
 
-				el.addEventListener('click', onBubbleClick, false);
+            var child = element.firstChild;
+            while (child && child.nodeType !== Node.ELEMENT_NODE) {
+                child = child.nextSibling;
+            }
 
-				el = el.firstElementChild;
-			}
-		}
+            return child;
+        }
+
+		 function onBodyLoad() {
+            var element = document.body;
+            while (element) {
+                element.addEventListener("click", onBubbleClick, false);
+                
+                element = getFirstElementChild(element);
+            }
+        }
 	</script>
 </body>
 </html>

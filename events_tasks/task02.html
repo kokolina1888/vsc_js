@@ -1,0 +1,38 @@
+<!-- // Напишете JavaScript функция, която се извиква при натискането на бутон. Функцията 
+// променя надписа на бутона от Like на Unlike и обратно.
+// при смяна на текста се променя - фонът и цветът на текста. /Пример - 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 02</title>
+</head>
+<body>
+	<button><h1>Like</h1></button>
+	<script type="text/javascript">
+		var btn = document.getElementsByTagName('button')[0];
+
+ 		//DEFAULT PPOPS
+
+ 		btn.style.backgroundColor = '#15076B';
+ 		btn.style.color = '#fff';
+
+ 		btn.addEventListener('click', function(){
+
+ 			if (btn.innerHTML === '<h1>Like</h1>') {
+ 				btn.innerHTML = '<h1>unLike</h1>';
+ 				btn.style.backgroundColor = '#FBF819';
+ 				btn.style.color = '#0F0B5E';
+ 			}
+ 			else {
+ 				btn.innerHTML = '<h1>Like</h1>';
+ 				btn.style.backgroundColor = '#15076B';
+ 				btn.style.color = '#fff';
+
+ 			}
+
+ 		},false);
+ 	</script>
+ </body>
+ </html>

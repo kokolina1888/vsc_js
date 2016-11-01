@@ -1,54 +1,48 @@
-(function () {
+function Uni(str) {
 
-    /**
-     * Converts a hexadecimal string to a decimal number.
-     * @param {string} hex
-    */
-    function hex2dec(hex) {
-        var i,
-            result = 0,
-            hexArr = replaceLetters(hex).reverse().map(Number);
+    if (!str.length) {
+            console.log('The input must not be an empty string.');
+    } else{
 
-        function replaceLetters(hex) {
-            var i;
+            string_to_array = function() {  
+                 return str.split('');
 
-            hex = hex.split('');
-
-            for (i in hex) {
-                switch (hex[i]) {
-                    case 'A':
-                        hex[i] = 10;
-                        break;
-                    case 'B':
-                        hex[i] = 11;
-                        break;
-                    case 'C':
-                        hex[i] = 12;
-                        break;
-                    case 'D':
-                        hex[i] = 13;
-                        break;
-                    case 'E':
-                        hex[i] = 14;
-                        break;
-                    case 'F':
-                        hex[i] = 10;
-                        break;
-                }
             }
-            return hex;
+            var str1 = string_to_array(str);
+                //bconsole.log(str1);
+                
+        var count = 0;
+        for (var i = 0; i <= str1.length-1; i++) {
+            count = count + 1;
+            //console.log(count);  
+
+        //console.log(str1[i]);
+        
+
+                if (!isNaN(str1[i])) {
+                   
+                     console.log (str1[i]);
+                    count = str1[i] + 1;      
+               
+                }  
+                if (count === str1.length){
+                     
+                    console.log('convert to a number');         
+                }
         }
-
-
-        for (i in hexArr) {
-            result += (hexArr[i] * Math.pow(16, i));
-        }
-
-        return result;
+        
     }
 
+   //console.log('convert to a number');  
 
-    console.log(hex2dec('12'));
-    console.log(hex2dec('CA'));
+    
+}
+//var str = '';
+//var str = 'mk pp we vfv';-
+// var str = '1 2 2 6 8 6 7 8‟';
+// var str = '0000000'; -
+//var str = 'nbjhj4hjh5kj';
+//var str = '1 br 2 1 werr 3 1'-
+var str = '2 "" add "" 1 1 asd 2 "" 3';-
 
-} ());
+Uni(str);

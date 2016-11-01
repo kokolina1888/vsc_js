@@ -3,17 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>capturing events</title>
-</head>
-<body onload="onBodyLoad()">
-	<div>
-		<a href="">
-			<p>
-				<button>
-					Click me!
-				</button>
-			</p>
-		</a>		
-	</div>
+</head><body onload="onBodyLoad()">
+    <div>
+        <section>
+            <div>
+                <div>
+                    <a class="button" href="#">Click me!</a>
+                </div>
+            </div>
+        </section>
+    </div>
 	<script type="text/javascript">
 		function onCaptClick(){
 			console.log('capturing ' + this.nodeName);

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<style type="text/css">
+		#id {
+			width: 500px
+		}
+	</style>
+</head>
+<body>
+	<div id="slider" width=500>
+		<img src="img/city.jpg">
+	</div>
+	<div id='btn'>rigth</div>
+
+	<script type="text/javascript">
+		var imgArr = ['img/city.jpg', 'img/flowers.jpg', 'img/horse.jpg', 'img/lawn.jpg'];
+		var len = imgArr.length;
+		var i = 0;
+	console.log(len);
+		$('#btn').click(function(event) {
+			if(i !== len){
+				i++;
+				console.log(imgArr[i]);
+				$('img').attr('src', imgArr[i]);
+				$('img').css('width', '500px');
+				
+			} else {
+				i = 0;
+				$('img').attr('src', imgArr[i]);
+				$('img').css('width', '500px');
+				console.log($('img'));
+			}
+			console.log(i);
+		});
+		</script>
+
+
+	</body>
+	</html>
